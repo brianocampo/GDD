@@ -1,7 +1,7 @@
 
 package Test;
 
-import Tasks.RealizarBusqueda;
+import Tasks.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +12,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class BuscarTest {
+public class LoginTest {
     
     WebDriver driver = null;
     
@@ -26,16 +26,16 @@ public class BuscarTest {
     
     
     @Test
-    public void buscar(){
+    public void iniciarSesion(){
     
-        driver.get("https://www.google.com/");
-        RealizarBusqueda.BuscarEnGoogle(driver, "hola mundo");
-    
+        driver.get("https://23.96.11.167:8888/promo/login/auth");
+        Login.iniciarSesion(driver, "brian.ocampo","Brian2020*","exito");
+        Assert.assertTrue(ElementoPresente.elementoExiste(driver));
     }
     
     @AfterTest
     public void cerrarDriver(){
-        driver.quit();
+        //driver.quit();
     }
     
     
