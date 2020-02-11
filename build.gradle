@@ -1,0 +1,38 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+mainClassName = 'Runner.Main'
+
+
+repositories {
+    jcenter()
+}
+
+
+jar {
+    manifest {
+        attributes "Main-Class": "Runner.Main"
+    } 
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+dependencies {
+    
+    testCompile 'junit:junit:4.12'
+    
+     // https://mvnrepository.com/artifact/org.testng/testng
+    compile group: 'org.testng', name: 'testng', version: '7.1.0'
+    
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-remote-driver', version: '3.141.59'
+
+    // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
+    compile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '3.8.1'
+}

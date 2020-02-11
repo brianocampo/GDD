@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="8445" started-at="2020-02-11T15:45:58 COT" finished-at="2020-02-11T15:46:07 COT">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="8445" started-at="2020-02-11T15:45:58 COT" finished-at="2020-02-11T15:46:07 COT">
+      <class name="Test.BuscarTest">
+        <test-method status="PASS" signature="crearDriver()[pri:0, instance:Test.BuscarTest@79698539]" name="crearDriver" is-config="true" duration-ms="5888" started-at="2020-02-11T15:45:58 COT" finished-at="2020-02-11T15:46:04 COT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crearDriver -->
+        <test-method status="PASS" signature="buscar()[pri:0, instance:Test.BuscarTest@79698539]" name="buscar" duration-ms="1833" started-at="2020-02-11T15:46:04 COT" finished-at="2020-02-11T15:46:06 COT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buscar -->
+        <test-method status="PASS" signature="cerrarDriver()[pri:0, instance:Test.BuscarTest@79698539]" name="cerrarDriver" is-config="true" duration-ms="707" started-at="2020-02-11T15:46:06 COT" finished-at="2020-02-11T15:46:07 COT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cerrarDriver -->
+      </class> <!-- Test.BuscarTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
