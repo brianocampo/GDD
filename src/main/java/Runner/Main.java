@@ -11,7 +11,7 @@ public class Main {
         
         TestNG TN = new TestNG();
         TN.setTestClasses(new Class[]{Test.BuscarTest.class});
-        TN.run();
+        TN.run(); 
         
     }
     
