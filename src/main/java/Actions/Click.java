@@ -8,7 +8,14 @@ public class Click {
     
     public static void Clic(WebDriver driver,By elemento){
         
-        driver.findElement(elemento).click();
+        try {
+            
+            driver.findElement(elemento).click();
+            
+        } catch (Exception e) {
+            System.out.println("Actions.Click.Clic()" + e.getMessage());
+        }
+        
     }
     
 }

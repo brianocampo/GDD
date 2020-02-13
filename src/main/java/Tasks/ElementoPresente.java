@@ -6,11 +6,11 @@ import Actions.WaitUntil;
 import org.openqa.selenium.WebDriver;
 
 
-public class ElementoPresente {
+public class ElementoPresente  {
     
-    public static boolean elementoExiste(WebDriver driver){
+    public static boolean LoginExitoso(WebDriver driver){
     
-        return WaitUntil.Existe(driver, IndexUI.cerrarSesion);
+        return WaitUntil.Existe(driver, IndexUI.BTN_CERRAR_SESION);
     }
     
 }

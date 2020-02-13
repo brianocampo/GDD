@@ -17,13 +17,13 @@ package UI;
 import org.openqa.selenium.By;
 
 
-public class IndexUI {
+public class Promocion_createUI {
     
-     public static final By BTN_CERRAR_SESION = By.xpath("//a[.='Cerrar sesión']");
-     public static final By LLB_PLANTILLAS_PROMOCION = By.xpath("//a[.='Plantillas de promoción']");
-     public static final By LLB_PROMOCIONES = By.xpath("//a[contains(@href,'/promo/promotion/index') and .='Promociones']");
-     public static final By BTN_CREAR_PROMOCION = By.xpath("//*[@id='mainwrapper']/div[3]/div[2]/div[2]/a");
-     public static final By PRG_PROCESANDO = By.xpath("//div[@class='overlay']");
-     
+     public static final By LST_PLANTILLA = By.id("baseTemplate");
+     public static final By LST_CAMPAÑA = By.id("campaign");
+     public static final By LST_TIPO_PROMOCION = By.id("promotionType");
+     public static final By LST_SUB_TIPO_PROMOCION = By.id("promotionSubType");
+     public static final By LST_FORMA_APLICACION_PROMOCION = By.id("promotionApplicationForm");
+     public static final By BTN_GUARDAR = By.id("create");
     
 }
